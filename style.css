@@ -6,8 +6,13 @@
 }
 
 body{
+    align-items: center;
+    justify-content: center;
     background-color: #C3BEF0;
+    min-height: 100vh;
+    background: linear-gradient(#4671EA, #ab34e7af);
 }
+
 
 
 h2{
@@ -27,32 +32,35 @@ h2{
     
 }
 
-.type1{
+.container textarea{
     width: 100%;
-    border-radius: 5px;
-    border: 2px solid black;
-    height: 60px;
+    height: 100px;
     padding: 15px;
+    outline: none;
     resize: none;
-    font-size: 16px;
-    border-color: #bfbfbf;
+    font-size: 18px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    /* border-color: #bfbfbf; */
 }
 
-.type1:is(:focus, :valid)
+
+textarea:is(:focus, :valid)
 {
     border-width: 2px;
     padding: 14px;
     border-color: #4671EA;
 }
 
-.type1::-webkit-scrollbar{
-    width: 2px;
+textarea::-webkit-scrollbar{
+    width: 0px;
 }
 
 .count{
     padding: 10px;
     display: flex;
     justify-content:space-between;
+    font-size: 22px;
 }
 
 .btn{

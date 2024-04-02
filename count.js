@@ -1,11 +1,23 @@
-const text = document.getElementById("type1");
+const text = document.getElementById("txt");
+
+const textarea = document.querySelector("textarea");
+
+console.log(textarea);
+console.log(text);
+
 const p1 = document.getElementById("p1");
 const p2 = document.getElementById("p2");
 
 text.addEventListener("input", count);
 
+// textarea.addEventListener("keypress", e => {
+//     let scHeight = e.target.scrollHeight;
+//     textarea.style.height = `${scHeight}px`;
+// })
+
 function count(e)
 {
+    
     const a = e.target.value;
 
     let nCount = 0;
