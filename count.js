@@ -1,9 +1,9 @@
 const text = document.getElementById("txt");
 
-const textarea = document.querySelector("textarea");
+// const textarea = document.querySelector("textarea");
 
-console.log(textarea);
-console.log(text);
+// console.log(textarea);
+// console.log(text);
 
 const p1 = document.getElementById("p1");
 const p2 = document.getElementById("p2");
